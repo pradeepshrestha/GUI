@@ -37,21 +37,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.showtexturebox = new System.Windows.Forms.PictureBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lbl_StartPosX = new System.Windows.Forms.Label();
-            this.lbl_StartPosY = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lbl_cursorx = new System.Windows.Forms.Label();
-            this.lbl_cursory = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbl_canvasx = new System.Windows.Forms.Label();
-            this.lbl_canvasy = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -94,9 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showtexturebox)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showcolorbox)).BeginInit();
             this.panel3.SuspendLayout();
@@ -122,17 +104,19 @@
             this.panel1.Controls.Add(this.lbl_appname);
             this.panel1.Controls.Add(this.btn_Minimize);
             this.panel1.Controls.Add(this.btn_Close);
-            this.panel1.Location = new System.Drawing.Point(-1, 8);
+            this.panel1.Location = new System.Drawing.Point(-2, 12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(867, 25);
+            this.panel1.Size = new System.Drawing.Size(1300, 38);
             this.panel1.TabIndex = 0;
             // 
             // icon
             // 
             this.icon.Image = ((System.Drawing.Image)(resources.GetObject("icon.Image")));
-            this.icon.Location = new System.Drawing.Point(3, -1);
+            this.icon.Location = new System.Drawing.Point(4, -2);
+            this.icon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.icon.Name = "icon";
-            this.icon.Size = new System.Drawing.Size(34, 29);
+            this.icon.Size = new System.Drawing.Size(51, 45);
             this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.icon.TabIndex = 1;
             this.icon.TabStop = false;
@@ -141,10 +125,11 @@
             // 
             this.lbl_appname.AutoSize = true;
             this.lbl_appname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_appname.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lbl_appname.Location = new System.Drawing.Point(37, 7);
+            this.lbl_appname.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbl_appname.Location = new System.Drawing.Point(56, 11);
+            this.lbl_appname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_appname.Name = "lbl_appname";
-            this.lbl_appname.Size = new System.Drawing.Size(298, 17);
+            this.lbl_appname.Size = new System.Drawing.Size(410, 25);
             this.lbl_appname.TabIndex = 2;
             this.lbl_appname.Text = "Graphical Programming Language Application";
             // 
@@ -157,9 +142,10 @@
             this.btn_Minimize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Minimize.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_Minimize.Location = new System.Drawing.Point(805, 6);
+            this.btn_Minimize.Location = new System.Drawing.Point(1208, 9);
+            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(15, 15);
+            this.btn_Minimize.Size = new System.Drawing.Size(22, 23);
             this.btn_Minimize.TabIndex = 1;
             this.btn_Minimize.UseVisualStyleBackColor = false;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
@@ -171,9 +157,10 @@
             this.btn_Close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Close.BackgroundImage")));
             this.btn_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Close.Location = new System.Drawing.Point(834, 6);
+            this.btn_Close.Location = new System.Drawing.Point(1251, 9);
+            this.btn_Close.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(15, 15);
+            this.btn_Close.Size = new System.Drawing.Size(22, 23);
             this.btn_Close.TabIndex = 0;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
@@ -184,15 +171,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.showtexturebox);
-            this.panel2.Controls.Add(this.groupBox3);
-            this.panel2.Controls.Add(this.groupBox2);
-            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.menuStrip2);
             this.panel2.Controls.Add(this.showcolorbox);
-            this.panel2.Location = new System.Drawing.Point(-1, 33);
+            this.panel2.Location = new System.Drawing.Point(-2, 51);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(867, 69);
+            this.panel2.Size = new System.Drawing.Size(1300, 106);
             this.panel2.TabIndex = 1;
             // 
             // label2
@@ -200,9 +185,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Location = new System.Drawing.Point(126, 24);
+            this.label2.Location = new System.Drawing.Point(189, 37);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 15);
+            this.label2.Size = new System.Drawing.Size(85, 22);
             this.label2.TabIndex = 14;
             this.label2.Text = "Texture:";
             // 
@@ -211,200 +197,36 @@
             this.showtexturebox.BackColor = System.Drawing.Color.Black;
             this.showtexturebox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("showtexturebox.BackgroundImage")));
             this.showtexturebox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.showtexturebox.Location = new System.Drawing.Point(188, 22);
+            this.showtexturebox.Location = new System.Drawing.Point(282, 34);
+            this.showtexturebox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.showtexturebox.Name = "showtexturebox";
-            this.showtexturebox.Size = new System.Drawing.Size(21, 21);
+            this.showtexturebox.Size = new System.Drawing.Size(32, 32);
             this.showtexturebox.TabIndex = 13;
             this.showtexturebox.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.lbl_StartPosX);
-            this.groupBox3.Controls.Add(this.lbl_StartPosY);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(572, 6);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(90, 37);
-            this.groupBox3.TabIndex = 12;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Start Position";
-            // 
-            // lbl_StartPosX
-            // 
-            this.lbl_StartPosX.AutoSize = true;
-            this.lbl_StartPosX.ForeColor = System.Drawing.Color.White;
-            this.lbl_StartPosX.Location = new System.Drawing.Point(20, 16);
-            this.lbl_StartPosX.Name = "lbl_StartPosX";
-            this.lbl_StartPosX.Size = new System.Drawing.Size(25, 13);
-            this.lbl_StartPosX.TabIndex = 9;
-            this.lbl_StartPosX.Text = "000";
-            // 
-            // lbl_StartPosY
-            // 
-            this.lbl_StartPosY.AutoSize = true;
-            this.lbl_StartPosY.ForeColor = System.Drawing.Color.White;
-            this.lbl_StartPosY.Location = new System.Drawing.Point(61, 16);
-            this.lbl_StartPosY.Name = "lbl_StartPosY";
-            this.lbl_StartPosY.Size = new System.Drawing.Size(25, 13);
-            this.lbl_StartPosY.TabIndex = 10;
-            this.lbl_StartPosY.Text = "000";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label9.Location = new System.Drawing.Point(4, 16);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(17, 13);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "X:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label10.Location = new System.Drawing.Point(47, 16);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(17, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Y:";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lbl_cursorx);
-            this.groupBox2.Controls.Add(this.lbl_cursory);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(666, 6);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(92, 37);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cursor Position";
-            // 
-            // lbl_cursorx
-            // 
-            this.lbl_cursorx.AutoSize = true;
-            this.lbl_cursorx.ForeColor = System.Drawing.Color.White;
-            this.lbl_cursorx.Location = new System.Drawing.Point(20, 16);
-            this.lbl_cursorx.Name = "lbl_cursorx";
-            this.lbl_cursorx.Size = new System.Drawing.Size(25, 13);
-            this.lbl_cursorx.TabIndex = 9;
-            this.lbl_cursorx.Text = "000";
-            // 
-            // lbl_cursory
-            // 
-            this.lbl_cursory.AutoSize = true;
-            this.lbl_cursory.ForeColor = System.Drawing.Color.White;
-            this.lbl_cursory.Location = new System.Drawing.Point(62, 16);
-            this.lbl_cursory.Name = "lbl_cursory";
-            this.lbl_cursory.Size = new System.Drawing.Size(25, 13);
-            this.lbl_cursory.TabIndex = 10;
-            this.lbl_cursory.Text = "000";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label7.Location = new System.Drawing.Point(4, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(17, 13);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "X:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label8.Location = new System.Drawing.Point(48, 16);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(17, 13);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Y:";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.lbl_canvasx);
-            this.groupBox1.Controls.Add(this.lbl_canvasy);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(762, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(92, 37);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Canvas Center";
-            // 
-            // lbl_canvasx
-            // 
-            this.lbl_canvasx.AutoSize = true;
-            this.lbl_canvasx.ForeColor = System.Drawing.Color.White;
-            this.lbl_canvasx.Location = new System.Drawing.Point(20, 15);
-            this.lbl_canvasx.Name = "lbl_canvasx";
-            this.lbl_canvasx.Size = new System.Drawing.Size(25, 13);
-            this.lbl_canvasx.TabIndex = 9;
-            this.lbl_canvasx.Text = "000";
-            this.lbl_canvasx.Click += new System.EventHandler(this.lbl_canvasx_Click);
-            // 
-            // lbl_canvasy
-            // 
-            this.lbl_canvasy.AutoSize = true;
-            this.lbl_canvasy.ForeColor = System.Drawing.Color.White;
-            this.lbl_canvasy.Location = new System.Drawing.Point(62, 15);
-            this.lbl_canvasy.Name = "lbl_canvasy";
-            this.lbl_canvasy.Size = new System.Drawing.Size(25, 13);
-            this.lbl_canvasy.TabIndex = 10;
-            this.lbl_canvasy.Text = "000";
-            this.lbl_canvasy.Click += new System.EventHandler(this.lbl_canvasy_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label3.Location = new System.Drawing.Point(4, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "X:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label4.Location = new System.Drawing.Point(48, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(17, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Y:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(40, 24);
+            this.label1.Location = new System.Drawing.Point(60, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 15);
+            this.label1.Size = new System.Drawing.Size(70, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Color :";
             // 
             // menuStrip2
             // 
             this.menuStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(867, 24);
+            this.menuStrip2.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip2.Size = new System.Drawing.Size(1300, 35);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -416,7 +238,7 @@
             this.saveToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
@@ -424,7 +246,7 @@
             this.newToolStripMenuItem.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.newToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(140, 30);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click_1);
             // 
@@ -436,21 +258,21 @@
             this.openTextToolStripMenuItem});
             this.openToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(140, 30);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click_1);
             // 
             // openImageToolStripMenuItem
             // 
             this.openImageToolStripMenuItem.Name = "openImageToolStripMenuItem";
-            this.openImageToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.openImageToolStripMenuItem.Size = new System.Drawing.Size(195, 30);
             this.openImageToolStripMenuItem.Text = "Open Image";
             this.openImageToolStripMenuItem.Click += new System.EventHandler(this.openImageToolStripMenuItem_Click);
             // 
             // openTextToolStripMenuItem
             // 
             this.openTextToolStripMenuItem.Name = "openTextToolStripMenuItem";
-            this.openTextToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.openTextToolStripMenuItem.Size = new System.Drawing.Size(195, 30);
             this.openTextToolStripMenuItem.Text = "Open Text";
             this.openTextToolStripMenuItem.Click += new System.EventHandler(this.openTextToolStripMenuItem_Click);
             // 
@@ -462,21 +284,21 @@
             this.saveTextToolStripMenuItem});
             this.saveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(140, 30);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click_1);
             // 
             // saveImageToolStripMenuItem
             // 
             this.saveImageToolStripMenuItem.Name = "saveImageToolStripMenuItem";
-            this.saveImageToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.saveImageToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
             this.saveImageToolStripMenuItem.Text = "Save Image";
             this.saveImageToolStripMenuItem.Click += new System.EventHandler(this.saveImageToolStripMenuItem_Click);
             // 
             // saveTextToolStripMenuItem
             // 
             this.saveTextToolStripMenuItem.Name = "saveTextToolStripMenuItem";
-            this.saveTextToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.saveTextToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
             this.saveTextToolStripMenuItem.Text = "Save Text";
             this.saveTextToolStripMenuItem.Click += new System.EventHandler(this.saveTextToolStripMenuItem_Click);
             // 
@@ -484,16 +306,17 @@
             // 
             this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // showcolorbox
             // 
             this.showcolorbox.BackColor = System.Drawing.Color.Black;
-            this.showcolorbox.Location = new System.Drawing.Point(91, 22);
+            this.showcolorbox.Location = new System.Drawing.Point(136, 34);
+            this.showcolorbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.showcolorbox.Name = "showcolorbox";
-            this.showcolorbox.Size = new System.Drawing.Size(21, 21);
+            this.showcolorbox.Size = new System.Drawing.Size(32, 32);
             this.showcolorbox.TabIndex = 1;
             this.showcolorbox.TabStop = false;
             this.showcolorbox.Click += new System.EventHandler(this.showcolorbox_Click);
@@ -506,9 +329,10 @@
             this.panel3.Controls.Add(this.btn_elipse);
             this.panel3.Controls.Add(this.btn_square);
             this.panel3.Controls.Add(this.btn_Rectangle);
-            this.panel3.Location = new System.Drawing.Point(6, 81);
+            this.panel3.Location = new System.Drawing.Point(9, 125);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(30, 357);
+            this.panel3.Size = new System.Drawing.Size(45, 549);
             this.panel3.TabIndex = 3;
             // 
             // btn_pen
@@ -517,9 +341,10 @@
             this.btn_pen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_pen.BackgroundImage")));
             this.btn_pen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_pen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_pen.Location = new System.Drawing.Point(4, 2);
+            this.btn_pen.Location = new System.Drawing.Point(6, 3);
+            this.btn_pen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_pen.Name = "btn_pen";
-            this.btn_pen.Size = new System.Drawing.Size(23, 23);
+            this.btn_pen.Size = new System.Drawing.Size(34, 35);
             this.btn_pen.TabIndex = 7;
             this.btn_pen.UseVisualStyleBackColor = true;
             this.btn_pen.Click += new System.EventHandler(this.btn_pen_Click);
@@ -530,9 +355,10 @@
             this.btn_polygon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_polygon.BackgroundImage")));
             this.btn_polygon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_polygon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_polygon.Location = new System.Drawing.Point(4, 147);
+            this.btn_polygon.Location = new System.Drawing.Point(6, 226);
+            this.btn_polygon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_polygon.Name = "btn_polygon";
-            this.btn_polygon.Size = new System.Drawing.Size(23, 23);
+            this.btn_polygon.Size = new System.Drawing.Size(34, 35);
             this.btn_polygon.TabIndex = 6;
             this.btn_polygon.UseVisualStyleBackColor = true;
             this.btn_polygon.Click += new System.EventHandler(this.btn_polygon_Click);
@@ -543,9 +369,10 @@
             this.btn_triangle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_triangle.BackgroundImage")));
             this.btn_triangle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_triangle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_triangle.Location = new System.Drawing.Point(4, 118);
+            this.btn_triangle.Location = new System.Drawing.Point(6, 182);
+            this.btn_triangle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_triangle.Name = "btn_triangle";
-            this.btn_triangle.Size = new System.Drawing.Size(23, 23);
+            this.btn_triangle.Size = new System.Drawing.Size(34, 35);
             this.btn_triangle.TabIndex = 5;
             this.btn_triangle.UseVisualStyleBackColor = true;
             this.btn_triangle.Click += new System.EventHandler(this.btn_triangle_Click);
@@ -556,9 +383,10 @@
             this.btn_elipse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_elipse.BackgroundImage")));
             this.btn_elipse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_elipse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_elipse.Location = new System.Drawing.Point(4, 89);
+            this.btn_elipse.Location = new System.Drawing.Point(6, 137);
+            this.btn_elipse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_elipse.Name = "btn_elipse";
-            this.btn_elipse.Size = new System.Drawing.Size(23, 23);
+            this.btn_elipse.Size = new System.Drawing.Size(34, 35);
             this.btn_elipse.TabIndex = 4;
             this.btn_elipse.UseVisualStyleBackColor = true;
             this.btn_elipse.Click += new System.EventHandler(this.btn_elipse_Click);
@@ -569,9 +397,10 @@
             this.btn_square.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_square.BackgroundImage")));
             this.btn_square.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_square.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_square.Location = new System.Drawing.Point(4, 60);
+            this.btn_square.Location = new System.Drawing.Point(6, 92);
+            this.btn_square.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_square.Name = "btn_square";
-            this.btn_square.Size = new System.Drawing.Size(23, 23);
+            this.btn_square.Size = new System.Drawing.Size(34, 35);
             this.btn_square.TabIndex = 3;
             this.btn_square.UseVisualStyleBackColor = true;
             this.btn_square.Click += new System.EventHandler(this.btn_square_Click);
@@ -582,9 +411,10 @@
             this.btn_Rectangle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Rectangle.BackgroundImage")));
             this.btn_Rectangle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Rectangle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Rectangle.Location = new System.Drawing.Point(4, 31);
+            this.btn_Rectangle.Location = new System.Drawing.Point(6, 48);
+            this.btn_Rectangle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Rectangle.Name = "btn_Rectangle";
-            this.btn_Rectangle.Size = new System.Drawing.Size(23, 23);
+            this.btn_Rectangle.Size = new System.Drawing.Size(34, 35);
             this.btn_Rectangle.TabIndex = 2;
             this.btn_Rectangle.UseVisualStyleBackColor = true;
             this.btn_Rectangle.Click += new System.EventHandler(this.btn_Rectangle_Click);
@@ -597,27 +427,30 @@
             this.panel4.Controls.Add(this.btn_consolerun);
             this.panel4.Controls.Add(this.btn_console1clear);
             this.panel4.Controls.Add(this.tabControl1);
-            this.panel4.Location = new System.Drawing.Point(662, 81);
+            this.panel4.Location = new System.Drawing.Point(993, 125);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(203, 373);
+            this.panel4.Size = new System.Drawing.Size(304, 574);
             this.panel4.TabIndex = 4;
             // 
             // rtxt_console
             // 
             this.rtxt_console.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rtxt_console.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.rtxt_console.Location = new System.Drawing.Point(3, 3);
+            this.rtxt_console.Location = new System.Drawing.Point(4, 5);
+            this.rtxt_console.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rtxt_console.Name = "rtxt_console";
-            this.rtxt_console.Size = new System.Drawing.Size(188, 179);
+            this.rtxt_console.Size = new System.Drawing.Size(280, 273);
             this.rtxt_console.TabIndex = 1;
             this.rtxt_console.Text = "";
             this.rtxt_console.TextChanged += new System.EventHandler(this.rtxt_console_TextChanged);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(73, 188);
+            this.button2.Location = new System.Drawing.Point(110, 289);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 23);
+            this.button2.Size = new System.Drawing.Size(74, 35);
             this.button2.TabIndex = 5;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
@@ -625,9 +458,10 @@
             // 
             // btn_consolerun
             // 
-            this.btn_consolerun.Location = new System.Drawing.Point(142, 188);
+            this.btn_consolerun.Location = new System.Drawing.Point(213, 289);
+            this.btn_consolerun.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_consolerun.Name = "btn_consolerun";
-            this.btn_consolerun.Size = new System.Drawing.Size(49, 23);
+            this.btn_consolerun.Size = new System.Drawing.Size(74, 35);
             this.btn_consolerun.TabIndex = 4;
             this.btn_consolerun.Text = "Run";
             this.btn_consolerun.UseVisualStyleBackColor = true;
@@ -635,9 +469,10 @@
             // 
             // btn_console1clear
             // 
-            this.btn_console1clear.Location = new System.Drawing.Point(3, 188);
+            this.btn_console1clear.Location = new System.Drawing.Point(4, 289);
+            this.btn_console1clear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_console1clear.Name = "btn_console1clear";
-            this.btn_console1clear.Size = new System.Drawing.Size(49, 23);
+            this.btn_console1clear.Size = new System.Drawing.Size(74, 35);
             this.btn_console1clear.TabIndex = 3;
             this.btn_console1clear.Text = "Clear";
             this.btn_console1clear.UseVisualStyleBackColor = true;
@@ -649,19 +484,21 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(3, 217);
+            this.tabControl1.Location = new System.Drawing.Point(4, 334);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(188, 150);
+            this.tabControl1.Size = new System.Drawing.Size(282, 231);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPage4.Controls.Add(this.rtxt_errors);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(180, 124);
+            this.tabPage4.Size = new System.Drawing.Size(274, 198);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Errors";
             // 
@@ -669,10 +506,11 @@
             // 
             this.rtxt_errors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rtxt_errors.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.rtxt_errors.Location = new System.Drawing.Point(3, 3);
+            this.rtxt_errors.Location = new System.Drawing.Point(4, 5);
+            this.rtxt_errors.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rtxt_errors.Name = "rtxt_errors";
             this.rtxt_errors.ReadOnly = true;
-            this.rtxt_errors.Size = new System.Drawing.Size(174, 118);
+            this.rtxt_errors.Size = new System.Drawing.Size(259, 179);
             this.rtxt_errors.TabIndex = 2;
             this.rtxt_errors.Text = "";
             // 
@@ -680,9 +518,10 @@
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPage3.Controls.Add(this.rtxt_history);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(180, 124);
+            this.tabPage3.Size = new System.Drawing.Size(274, 198);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "History";
             // 
@@ -690,10 +529,11 @@
             // 
             this.rtxt_history.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rtxt_history.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.rtxt_history.Location = new System.Drawing.Point(3, 3);
+            this.rtxt_history.Location = new System.Drawing.Point(4, 5);
+            this.rtxt_history.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rtxt_history.Name = "rtxt_history";
             this.rtxt_history.ReadOnly = true;
-            this.rtxt_history.Size = new System.Drawing.Size(174, 118);
+            this.rtxt_history.Size = new System.Drawing.Size(259, 179);
             this.rtxt_history.TabIndex = 1;
             this.rtxt_history.Text = "";
             // 
@@ -705,10 +545,11 @@
             this.tabPage1.Controls.Add(this.texture3);
             this.tabPage1.Controls.Add(this.texture2);
             this.tabPage1.Controls.Add(this.texture1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(180, 124);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage1.Size = new System.Drawing.Size(274, 198);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Texture";
             // 
@@ -716,9 +557,10 @@
             // 
             this.texture5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("texture5.BackgroundImage")));
             this.texture5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.texture5.Location = new System.Drawing.Point(11, 44);
+            this.texture5.Location = new System.Drawing.Point(16, 68);
+            this.texture5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.texture5.Name = "texture5";
-            this.texture5.Size = new System.Drawing.Size(30, 30);
+            this.texture5.Size = new System.Drawing.Size(45, 46);
             this.texture5.TabIndex = 5;
             this.texture5.TabStop = false;
             this.texture5.Click += new System.EventHandler(this.texture5_Click);
@@ -727,9 +569,10 @@
             // 
             this.texture4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("texture4.BackgroundImage")));
             this.texture4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.texture4.Location = new System.Drawing.Point(138, 8);
+            this.texture4.Location = new System.Drawing.Point(207, 12);
+            this.texture4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.texture4.Name = "texture4";
-            this.texture4.Size = new System.Drawing.Size(30, 30);
+            this.texture4.Size = new System.Drawing.Size(45, 46);
             this.texture4.TabIndex = 4;
             this.texture4.TabStop = false;
             this.texture4.Click += new System.EventHandler(this.texture4_Click);
@@ -738,9 +581,10 @@
             // 
             this.texture3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("texture3.BackgroundImage")));
             this.texture3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.texture3.Location = new System.Drawing.Point(95, 8);
+            this.texture3.Location = new System.Drawing.Point(142, 12);
+            this.texture3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.texture3.Name = "texture3";
-            this.texture3.Size = new System.Drawing.Size(30, 30);
+            this.texture3.Size = new System.Drawing.Size(45, 46);
             this.texture3.TabIndex = 3;
             this.texture3.TabStop = false;
             this.texture3.Click += new System.EventHandler(this.texture3_Click);
@@ -749,9 +593,10 @@
             // 
             this.texture2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("texture2.BackgroundImage")));
             this.texture2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.texture2.Location = new System.Drawing.Point(52, 8);
+            this.texture2.Location = new System.Drawing.Point(78, 12);
+            this.texture2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.texture2.Name = "texture2";
-            this.texture2.Size = new System.Drawing.Size(30, 30);
+            this.texture2.Size = new System.Drawing.Size(45, 46);
             this.texture2.TabIndex = 2;
             this.texture2.TabStop = false;
             this.texture2.Click += new System.EventHandler(this.texture2_Click);
@@ -760,9 +605,10 @@
             // 
             this.texture1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("texture1.BackgroundImage")));
             this.texture1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.texture1.Location = new System.Drawing.Point(11, 8);
+            this.texture1.Location = new System.Drawing.Point(16, 12);
+            this.texture1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.texture1.Name = "texture1";
-            this.texture1.Size = new System.Drawing.Size(30, 30);
+            this.texture1.Size = new System.Drawing.Size(45, 46);
             this.texture1.TabIndex = 1;
             this.texture1.TabStop = false;
             this.texture1.Click += new System.EventHandler(this.texture1_Click);
@@ -770,10 +616,11 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(180, 124);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage2.Size = new System.Drawing.Size(274, 198);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "3D";
             // 
@@ -783,9 +630,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.Controls.Add(this.drawareapanel);
-            this.panel5.Location = new System.Drawing.Point(42, 81);
+            this.panel5.Location = new System.Drawing.Point(63, 125);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(614, 379);
+            this.panel5.Size = new System.Drawing.Size(921, 583);
             this.panel5.TabIndex = 5;
             // 
             // drawareapanel
@@ -793,8 +641,9 @@
             this.drawareapanel.BackColor = System.Drawing.Color.White;
             this.drawareapanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.drawareapanel.Location = new System.Drawing.Point(0, 0);
+            this.drawareapanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.drawareapanel.Name = "drawareapanel";
-            this.drawareapanel.Size = new System.Drawing.Size(614, 379);
+            this.drawareapanel.Size = new System.Drawing.Size(921, 583);
             this.drawareapanel.TabIndex = 0;
             this.drawareapanel.TabStop = false;
             this.drawareapanel.Paint += new System.Windows.Forms.PaintEventHandler(this.draw);
@@ -806,17 +655,19 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(865, 472);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1298, 726);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.DarkRed;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Graphical Application";
@@ -830,12 +681,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showtexturebox)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showcolorbox)).EndInit();
@@ -901,21 +746,6 @@
         private System.Windows.Forms.PictureBox texture1;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.RichTextBox rtxt_errors;
-        private System.Windows.Forms.Label lbl_canvasy;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lbl_canvasx;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label lbl_cursorx;
-        private System.Windows.Forms.Label lbl_cursory;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label lbl_StartPosX;
-        private System.Windows.Forms.Label lbl_StartPosY;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox texture5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox showtexturebox;

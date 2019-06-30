@@ -13,25 +13,15 @@ D:\all files\British\assignment\ASE\2nd assignment\Graphical Programming Languag
 D:\all files\British\assignment\ASE\2nd assignment\Graphical Programming Language Application.exe
 D:\all files\British\assignment\ASE\2nd assignment\Graphical Programming Language Application.pdb
 D:\all files\British\assignment\ASE\2nd assignment\Graphical Programming Language Application.xml
-C:\Users\pradi\Desktop\assignment\ASE\2nd assignment\Graphical Programming Language Application.exe.config
-C:\Users\pradi\Desktop\_____\ASE\2nd assignment\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.exe
-C:\Users\pradi\Desktop\_____\ASE\2nd assignment\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.pdb
-C:\Users\pradi\Desktop\assignment\ASE\2nd assignment\Graphical Programming Language Application.exe
-C:\Users\pradi\Desktop\assignment\ASE\2nd assignment\Graphical Programming Language Application.pdb
-C:\Users\pradi\Desktop\assignment\ASE\2nd assignment\Graphical Programming Language Application.xml
-C:\Users\pradi\Desktop\_____\ASE\2nd assignment\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.csprojResolveAssemblyReference.cache
-C:\Users\pradi\Desktop\_____\ASE\2nd assignment\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical_Programming_Language_Application.Console.resources
-C:\Users\pradi\Desktop\_____\ASE\2nd assignment\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical_Programming_Language_Application.Main.resources
-C:\Users\pradi\Desktop\_____\ASE\2nd assignment\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical_Programming_Language_Application.Properties.Resources.resources
-C:\Users\pradi\Desktop\_____\ASE\2nd assignment\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.csproj.GenerateResource.Cache
 C:\assignment\ASE\2nd assignment\Graphical Programming Language Application.exe.config
-C:\Users\pradi\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.exe
-C:\Users\pradi\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.pdb
 C:\assignment\ASE\2nd assignment\Graphical Programming Language Application.exe
 C:\assignment\ASE\2nd assignment\Graphical Programming Language Application.pdb
 C:\assignment\ASE\2nd assignment\Graphical Programming Language Application.xml
-C:\Users\pradi\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.csprojResolveAssemblyReference.cache
-C:\Users\pradi\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical_Programming_Language_Application.Console.resources
-C:\Users\pradi\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical_Programming_Language_Application.Main.resources
-C:\Users\pradi\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical_Programming_Language_Application.Properties.Resources.resources
-C:\Users\pradi\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.csproj.GenerateResource.Cache
+C:\Users\vanda\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.csprojAssemblyReference.cache
+C:\Users\vanda\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical_Programming_Language_Application.Console.resources
+C:\Users\vanda\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical_Programming_Language_Application.Main.resources
+C:\Users\vanda\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical_Programming_Language_Application.Properties.Resources.resources
+C:\Users\vanda\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.csproj.GenerateResource.cache
+C:\Users\vanda\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.csproj.CoreCompileInputs.cache
+C:\Users\vanda\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.exe
+C:\Users\vanda\Desktop\Graphical Programming Language Application\Graphical Programming Language Application\obj\Debug\Graphical Programming Language Application.pdb

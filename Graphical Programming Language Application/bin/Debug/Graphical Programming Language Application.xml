@@ -9,21 +9,6 @@
             extending shape class 
             </summary>
         </member>
-        <member name="M:Graphical_Programming_Language_Application.Shape.draw(System.Drawing.Graphics)">
-            <summary>
-            passing Graphics value
-            </summary>
-            <param name="g"></param>
-        </member>
-        <member name="M:Graphical_Programming_Language_Application.Shape.set(System.Int32,System.Drawing.Brush,System.Drawing.Color,System.Int32[])">
-            <summary>
-            passing value from button click of main form to the shapes
-            </summary>
-            <param name="texturestyle"></param>
-            <param name="bb"></param>
-            <param name="c"></param>
-            <param name="list"></param>
-        </member>
         <member name="F:Graphical_Programming_Language_Application.Circle.x">
             <summary>
             getting value in variable for ellipse
@@ -220,6 +205,21 @@
             <param name="texturestyle"></param>
             <param name="bb"></param>
             <param name="c1"></param>
+            <param name="list"></param>
+        </member>
+        <member name="M:Graphical_Programming_Language_Application.Shape.draw(System.Drawing.Graphics)">
+            <summary>
+            passing Graphics value
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Graphical_Programming_Language_Application.Shape.set(System.Int32,System.Drawing.Brush,System.Drawing.Color,System.Int32[])">
+            <summary>
+            passing value from button click of main form to the shapes
+            </summary>
+            <param name="texturestyle"></param>
+            <param name="bb"></param>
+            <param name="c"></param>
             <param name="list"></param>
         </member>
         <member name="M:Graphical_Programming_Language_Application.ShapeFactory.GetShape(System.String)">
